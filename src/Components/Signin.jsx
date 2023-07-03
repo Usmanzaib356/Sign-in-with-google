@@ -1,9 +1,15 @@
 import React from 'react';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
+import { useNavigate } from 'react-router-dom';
 
 function Signin() {
+
+    const nav = useNavigate()
+
   const success = (res) => {
     console.log(res);
+    nav("/main")
+
   };
 
   const err = (err) => {
