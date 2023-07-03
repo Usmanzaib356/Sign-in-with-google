@@ -38,7 +38,7 @@ function Signin() {
             />
           </div>
           <div className='py-5 bg-white'>
-            <GoogleOAuthProvider clientId='YOUR_CLIENT_ID'>
+            <GoogleOAuthProvider clientId='851467543053-be5346mc6c5nnbme6s72pcrfbsjf4jjr.apps.googleusercontent.com'>
               {/* Make sure GoogleLogin is wrapped inside GoogleOAuthProvider */}
               <GoogleLogin onSuccess={success} onError={err}>
                 Sign in with Google
